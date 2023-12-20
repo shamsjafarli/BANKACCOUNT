@@ -81,7 +81,7 @@ const bankAccount = {
 
     spend: function (m) {//! xercleyen zaman
         const checkValid = () => {   //!checkvalid adnda funks yaratdı ifle yoxladı sehvlik varsa inv yoxsa balansdan cıxdu
-            if (this.balance <= 0) {
+            if (this.balance <= m) {
                 console.log("invalid balance");   //!balans 0dan kiçikdirse edeleri gosterme
                 return;
             };
